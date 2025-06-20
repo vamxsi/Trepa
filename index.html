@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trepa - Flex Your Foresight. Get Rewarded for Precision.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">T</div>
+                <span class="logo-text">Trepa</span>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-menu" id="navMenu">
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <button class="btn btn--primary nav-cta">Join Beta</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Flex Your Foresight. Get Rewarded for <span class="text-gradient">Precision</span>.</h1>
+                    <p class="hero-subtitle">The only prediction platform where social intuition beats IQ.</p>
+                    
+                    <!-- Interactive Demo Slider -->
+                    <div class="demo-slider">
+                        <div class="demo-label">Try it: What % of people will choose Option A?</div>
+                        <div class="slider-container">
+                            <input type="range" id="predictionSlider" class="prediction-slider" min="0" max="100" value="50">
+                            <div class="slider-value" id="sliderValue">50%</div>
+                        </div>
+                        <div class="demo-payout">
+                            <span class="payout-label">Potential Payout:</span>
+                            <span class="payout-amount" id="payoutAmount">$12.50</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-cta">
+                        <button class="btn btn--primary btn--lg cta-button" id="mainCTA">Join Beta</button>
+                        <p class="cta-subtext">Join 50K+ users already flexing their foresight</p>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="floating-cards">
+                        <div class="prediction-card card-1">
+                            <div class="card-header">Market Prediction</div>
+                            <div class="card-value">73%</div>
+                            <div class="card-label">Accuracy</div>
+                        </div>
+                        <div class="prediction-card card-2">
+                            <div class="card-header">Social Trend</div>
+                            <div class="card-value">+$127</div>
+                            <div class="card-label">Earnings</div>
+                        </div>
+                        <div class="prediction-card card-3">
+                            <div class="card-header">Leaderboard</div>
+                            <div class="card-value">#12</div>
+                            <div class="card-label">Ranking</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">50K+</div>
+                    <div class="stat-label">Beta Users</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">10K+</div>
+                    <div class="stat-label">Daily Predictions</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">85%</div>
+                    <div class="stat-label">Accuracy Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is Precision Prediction -->
+    <section class="precision-section">
+        <div class="container">
+            <div class="section-content">
+                <h2 class="section-title">What is <span class="text-gradient">Precision Prediction</span>?</h2>
+                <p class="section-description">Traditional prediction markets only care if you're right or wrong. Trepa pays you for being accurate—even if you're just 0.1% off.</p>
+                
+                <div class="comparison-grid">
+                    <div class="comparison-card traditional">
+                        <div class="card-header">
+                            <h3>Traditional Markets</h3>
+                            <div class="card-icon">📊</div>
+                        </div>
+                        <div class="card-content">
+                            <div class="example">
+                                <div class="prediction">Your Prediction: 49%</div>
+                                <div class="actual">Actual Result: 51%</div>
+                                <div class="payout payout-zero">Payout: $0</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="comparison-card trepa">
+                        <div class="card-header">
+                            <h3>Trepa Precision</h3>
+                            <div class="card-icon">🎯</div>
+                        </div>
+                        <div class="card-content">
+                            <div class="example">
+                                <div class="prediction">Your Prediction: 49%</div>
+                                <div class="actual">Actual Result: 51%</div>
+                                <div class="payout payout-win">Payout: $18.50</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How Trepa Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How Trepa Works</h2>
+            <div class="steps-grid">
+                <div class="step-card" data-step="1">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Slide</h3>
+                        <p>Choose your prediction with our intuitive slider interface</p>
+                        <div class="step-visual">
+                            <div class="interactive-slider">
+                                <input type="range" class="demo-range" min="0" max="100" value="65">
+                                <div class="slider-track"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step-card" data-step="2">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Stake</h3>
+                        <p>Put your money where your mind is - stake on your prediction</p>
+                        <div class="step-visual">
+                            <div class="coin-stack">
+                                <div class="coin"></div>
+                                <div class="coin"></div>
+                                <div class="coin"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step-card" data-step="3">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Show Off</h3>
+                        <p>See your accuracy ranking and earn rewards based on precision</p>
+                        <div class="step-visual">
+                            <div class="leaderboard-preview">
+                                <div class="leaderboard-item">
+                                    <span class="rank">#1</span>
+                                    <span class="user">You</span>
+                                    <span class="score">97.2%</span>
+                                </div>
+                                <div class="leaderboard-item">
+                                    <span class="rank">#2</span>
+                                    <span class="user">Alex</span>
+                                    <span class="score">94.8%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose <span class="text-gradient">Trepa</span>?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Judge the World</h3>
+                    <p>Swipe first, think later. Catch the hottest takes in real-time and drop your honest take with a single swipe.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Predict Anything on a Spectrum</h3>
+                    <p>Slide to predict public opinion and compete with accuracy. Move beyond the binary bets of prediction markets.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Get Rewarded in &lt;24 Hours</h3>
+                    <p>You have the attention span of a Gen Z? We got you. Win big fast or, well… touch some grass.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🧠</div>
+                    <h3>Beat the Crowd with Your EQ</h3>
+                    <p>Away with TA and candlestick fetishes. Master social intuition and get bragging rights!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accuracy Example -->
+    <section class="accuracy-example">
+        <div class="container">
+            <div class="accuracy-content">
+                <h2 class="section-title">Why <span class="text-gradient">Accuracy</span> Wins</h2>
+                <p class="section-description">Example: Stock will move by what percentage?</p>
+                
+                <div class="accuracy-demo">
+                    <div class="accuracy-case">
+                        <div class="case-prediction">Your Prediction: 4.9%</div>
+                        <div class="case-actual">Actual Result: 5.0%</div>
+                        <div class="case-payout win">Big Payout: $45.80</div>
+                        <div class="accuracy-bar">
+                            <div class="accuracy-fill" style="width: 98%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="accuracy-case">
+                        <div class="case-prediction">Your Prediction: 8.0%</div>
+                        <div class="case-actual">Actual Result: 5.0%</div>
+                        <div class="case-payout lose">Smaller Payout: $3.20</div>
+                        <div class="accuracy-bar">
+                            <div class="accuracy-fill" style="width: 40%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Users Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Playing Trepa feels like running simulations on reality. Every question is a new experiment in understanding the hivemind."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">J</div>
+                        <div class="author-name">Jordan</div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Ain't no insider alpha, just pure raw crowd psyops. Trepa had me rethinking reality—turns out the best edge is knowing how NPCs tick."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">D</div>
+                        <div class="author-name">David</div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Trepa is like a bootcamp for social awareness. Wildly addictive."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">P</div>
+                        <div class="author-name">Peddy</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Flex Your <span class="text-gradient">Foresight</span>?</h2>
+                <p class="cta-description">Join thousands of users who are already earning from their social intuition</p>
+                
+                <div class="signup-form">
+                    <div class="form-group">
+                        <input type="email" id="emailInput" class="form-control" placeholder="Enter your email">
+                        <button class="btn btn--primary" id="signupButton">Join Beta</button>
+                    </div>
+                    <p class="form-note">No spam, just pure alpha. Unsubscribe anytime.</p>
+                </div>
+                
+                <div class="social-share">
+                    <p>Share your prediction, tag <a href="https://twitter.com/trepa_io" target="_blank">@trepa_io</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo-icon">T</div>
+                    <span class="logo-text">Trepa</span>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="/privacy">Privacy</a>
+                    <a href="/terms">Terms</a>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="https://twitter.com/trepa_io" target="_blank">Twitter</a>
+                    <a href="https://discord.gg/trepa" target="_blank">Discord</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Trepa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
